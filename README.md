@@ -1,7 +1,7 @@
 # N-Queens_SA_py_jl
 SAを用いてN-Queenを解いてみる(Python / Julia)
 
-SA=Simulated Annealing を用いて、N-Queenの解を求めてみました。  
+SA=Simulated Annealing（焼きなまし法）を用いて、N-Queenの解を求めてみました。  
 PythonとJuliaで同じアルゴリズムを実装しています。  
 
 ## Usage
