@@ -1,4 +1,4 @@
-# N-queen by Simulated Aneeling
+# N-queen by Simulated Annealing
 # シミュレーティッドアニーリング（焼きなまし法）によるN-Queen
 import random
 import math
