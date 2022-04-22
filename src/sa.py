@@ -20,17 +20,17 @@ class Board:
         # row
         self.rows = [[(x, y) for x in range(size)] for y in range(size)]
         # col
-        self.cols = [[(y, x) for x in range(size)] for y in range(size)]
+        self.cols = [[(x, y) for y in range(size)] for x in range(size)]
 
         self.diags = []
         # rightup-diagonal
-        self.diags += [[(x, r-x) for x in range(0, min(r + 1, size)) if r - x < size] for r in range(0, 2*size-1)]
+        self.diags += [[(x, a-x) for x in range(0, min(a + 1, size)) if a - x < size] for a in range(0, 2*size-1)]
 
         # rightdown-diagonal
         self.diags.append([(x, x) for x in range(0, size)])
 
-        self.diags += [[(x, x - d) for x in range(d, size)] for d in range(1, size)]
-        self.diags += [[(y - d, y) for y in range(d, size)] for d in range(1, size)]
+        self.diags += [[(x, x - b) for x in range(b, size)] for b in range(1, size)]
+        self.diags += [[(y - b, y) for y in range(b, size)] for b in range(1, size)]
 
     def energy(self):
         '''

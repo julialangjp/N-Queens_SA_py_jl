@@ -17,15 +17,15 @@ struct Board
 
         # energy計算用の row, col, diagの座標一覧
         r = [[(x, y) for x = 1:size] for y = 1:size]
-        c = [[(y, x) for x = 1:size] for y = 1:size]
+        c = [[(x, y) for y = 1:size] for x = 1:size]
 
         # rightup-diagonal
-        d = [[(x, r - x + 1) for x = 1:minimum([r, size]) if r - x < size] for r = 1:(2*size-1)]
+        d = [[(x, a - x + 1) for x = 1:minimum([a, size]) if a - x < size] for a = 1:(2*size-1)]
 
         # rightdown-diagonal
         append!(d, [[(x, x) for x = 1:size]])
-        append!(d, [[(x, x - l) for x = l+1:size] for l = 1:size-1])
-        append!(d, [[(y - l, y) for y = l+1:size] for l = 1:size-1])
+        append!(d, [[(x, x - b) for x = b+1:size] for b = 1:size-1])
+        append!(d, [[(y - b, y) for y = b+1:size] for b = 1:size-1])
         
         new(size, u, r, c, d)
     end
