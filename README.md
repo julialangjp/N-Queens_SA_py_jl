@@ -1,4 +1,4 @@
-# N-QueensBySA_py_jl
+# N-Queens_SA_py_jl
 SAを用いてN-Queenを解いてみる with Python , with Julia
 
 SA=Simulated Annealing を用いて、N-Queenの解を求めてみました。  
