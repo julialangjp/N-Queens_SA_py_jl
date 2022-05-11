@@ -88,7 +88,7 @@ function run(board::Board, temp_start, temp_end, alpha, temp_iter)
             if exp(- de / temperature) > rand()    # 条件 (de < 0) 含む 
                 # 変化を許す
                 now_energy = new_energy
-                #display(borad)
+                #display(board)
                 #println("energy = ", now_energy, "temp = ", temperature)
 
                 # 解に到達したら終了
