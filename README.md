@@ -38,4 +38,4 @@ energy = 0, temp = 0.989111599179543
 
 ## 参照
 　次のページに簡単な解説を書きました。  
-　　  [N-QueenをSA（シミュレーティド・アニーリング）で解いてみる(julialang.jp)](https://julialang.jp/2022/04/22/nqueen_sa/)
+　　  [N-QueenをSA（シミュレーティド・アニーリング）で解いてみる](https://leadinge.co.jp/julialang/2022/04/22/nqueen_sa/)
